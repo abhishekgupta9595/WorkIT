@@ -1,0 +1,121 @@
+.item_admin{
+    width: 400px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-shadow: rgba(47, 47, 47, 0.155) 0px 3px 8px;
+    background-color: white;
+
+    margin: 10px;
+}
+.item_admin:hover{
+    box-shadow: rgba(1, 99, 174, 0.502) 0px 3px 8px;
+}
+.item_admin .content{
+    display: flex;
+    align-items: center;
+
+    width: 300px;
+}
+.item_admin .content img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+.item_admin .controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    font-size: 28px;
+
+    width: 100px;
+
+}
+.item_admin .controls .btns{
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+
+
+/* ===================== */
+
+
+
+
+.item_list_admin{
+    width: fit-content;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+}
+
+.item_list_admin .new_item_form_element{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+}
+
+.item_list_admin .new_item_form_element .cancel_btn{
+    width: 100%;
+    padding: 0 50px;
+    font-size: 36px;
+    background-color: rgb(237, 237, 237);
+    cursor: pointer;
+}
+
+.item_list_admin .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+}
+.item_list_admin .header h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+.item_list_admin .header h1 i{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.item_list_admin .header button{
+    width: 200px;
+    height: 50px;
+
+    background-color: rgb(56, 169, 56);
+    color: white;
+    font-size: 20px;
+
+    border-radius: 5px;
+    box-shadow: rgba(47, 47, 47, 0.155) 0px 3px 8px;
+
+}
+
+
+.item_list_admin .body{
+    width: fit-content;
+    flex-grow: 1;
+
+    overflow: hidden;
+    overflow-y: scroll;
+}

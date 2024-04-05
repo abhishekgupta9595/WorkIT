@@ -1,0 +1,170 @@
+.main_container {
+    height: 100% !important;
+    width: 100%;
+  }
+  .hero_section {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    padding-top: 50px;
+  }
+  .main_container::before {
+    content: "";
+    background: url("src/assets/images/Ellipse 8 (2).png") no-repeat center
+      center/cover;
+    position: absolute;
+    opacity: 0.3;
+    top: 0px;
+    left: 0rem;
+    width: 70vw;
+    height: 73vw;
+    z-index: -1;
+  }
+  
+  
+  .section2 {
+    height: auto;
+    width: 100;
+    margin: auto;
+    padding-top: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .section2::after {
+    content: "";
+    background: url("src/assets/images/Ellipse 8 (3).png") no-repeat center
+      center/cover;
+    position: absolute;
+    opacity: 0.3;
+    top: 170vh;
+    left: 0px;
+    width: 100%;
+    height: 90vh;
+    z-index: -1;
+  }
+  
+  .Section2_detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .Section2_detail .description {
+    font-size: larger;
+    width: 30%;
+    padding: 2px 10px;
+  }
+  .Section2_detail .description h1 {
+    font-size: 36px;
+    font-weight: 600;
+    width: 100% !important;
+  }
+  .section2_image1 {
+    width: 40rem;
+  }
+  
+  .hero_section {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+  }
+  
+  .hero_section .company_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+  }
+  
+  .hero_section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 0 30px;
+  }
+  
+  .hero_images_and_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    flex-wrap: wrap;
+  }  
+  
+  .start_building_btn button {
+    width: 12rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    font-size: 1.3rem;
+    border: none;
+    background-color: #1159a8;
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .company_logo {
+    margin-bottom: -5rem;
+    width: 31rem;
+  }
+  
+  .building_image {
+    height: auto;
+    width: 55rem;
+    padding-top: 150px;
+    border-radius: 0.8rem;
+  }
+  @media screen and (max-width: 1180px) {
+    .company_logo {
+        margin: 120px 0 60px 0;
+        width: 18rem;
+      }
+      .main_container::before {
+        opacity: 0.3;
+        top: 0px;
+        left: -10rem;
+        height: 60vh;
+        width: 60vh;
+        z-index: -1;
+      }
+      .hero_images_and_btn {
+        height: 820px;
+        justify-content: space-evenly;
+        padding-left: 50px;
+        padding-right: 50px;
+        flex-direction: column;
+      }
+    .hero_images_and_btn {
+      padding: 0 15px;
+    }
+    .building_image {
+      width: 100%;
+      height: auto;
+    }
+    .hero_section h1 {
+        font-size:  2.1rem;
+    }
+    .section2 {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 12rem;
+    }
+    .Section2_detail {
+      justify-content: center;
+      padding-top: 20px;
+    }
+    .Section2_detail .description {
+        width: 80%;
+      }
+      .Section2_detail .description h1 {
+          margin-top: 80px;
+    }
+
+}
